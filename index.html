@@ -1,0 +1,44 @@
+<!-- create a search input to query openweathermap.org/api for weather data in certain cities -->
+    <!-- prepend searches underneath with local storage -->
+
+<!-- container that displays section with current weather data from search city -->
+    <!-- city name, date, icon with weather conditions, temperature, humidity, wind speed, and UV index -->
+    <!-- UV index display will be color coordinated for favorable, moderate, or high risk -->
+<!-- a separate section in the container for a 5-day forecast of the current city -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+<body>
+    <header class= "">
+        <h1>Your Weather Dashboard</h1>
+    </header>
+    <main class="container">
+        <div class="row">
+            <div class=" card col-3">
+                <form>
+                    <input class="city-input" type="search" placeholder="City" aria-label="City">
+                    <input class='city-input-submit' type="submit"
+                </form>
+            </div> 
+            <div class= 'card' id='current-forecast'></div>
+            <div id='five-day-forecast'></div>
+            <!-- appended items will be cards -->
+        </div>
+    </main>
+
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW"
+    crossorigin="anonymous"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
