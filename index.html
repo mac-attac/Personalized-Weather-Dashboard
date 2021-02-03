@@ -16,21 +16,30 @@
     <title>Document</title>
 </head>
 <body>
-    <header class= "">
-        <h1>Your Weather Dashboard</h1>
+    <header class= "jumbotron">
+        <nav class="navbar navbar-dark bg-dark">
+            <h2 class="navbar-brand">
+                <img src="https://cdn2.iconfinder.com/data/icons/letters-and-numbers-1/32/lowercase_letter_w_blue-512.png" width="30" height="30" class="d-inline-block align-top"
+                    alt="w icon">
+                Wunder Weather
+            </h2>
+        </nav>
     </header>
     <main class="container">
         <div class="row">
-            <div class=" card col-3">
-                <form>
-                    <input class="city-input" type="search" placeholder="City" aria-label="City">
-                    <input class='city-input-submit' type="submit"
-                </form>
-            </div> 
-            <div class= 'card' id='current-forecast'></div>
-            <div id='five-day-forecast'></div>
-            <!-- appended items will be cards -->
+            <div class="card col-3">
+                <div class="input-group">
+                    <input type="search" class=" city-input form-control rounded" placeholder="City" aria-label="Search"
+                            aria-describedby="search-addon" />
+                    <button type="button" class="city-input-submit btn btn-outline-primary">search</button>
+                </div>
+            </div>
+            <div class='card col-9' id='current-forecast'></div>
+            <div class='card col-9' id='five-day-forecast'></div>
+            </div>  
         </div>
+
+        
     </main>
 
 
