@@ -27,15 +27,21 @@
     </header>
     <main class="container">
         <div class="row">
-            <div class="card col-3">
+            <div class="card col-3" id='search'>
                 <div class="input-group">
                     <input type="search" class=" city-input form-control rounded" placeholder="City" aria-label="Search"
                             aria-describedby="search-addon" />
                     <button type="button" class="city-input-submit btn btn-outline-primary">search</button>
                 </div>
+                <ul id='prev-searches'>
+
+                </ul>
             </div>
-            <div class='card col-9' id='current-forecast'></div>
-            <div class='card col-9' id='five-day-forecast'></div>
+            <div class="col-9">
+                <div class='card' id='current-forecast'></div>
+                <div class='card' id='five-day-forecast'></div>
+            </div>
+            
             </div>  
         </div>
 
